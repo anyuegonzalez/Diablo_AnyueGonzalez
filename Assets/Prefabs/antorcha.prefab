@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 5954856753424683929}
   - component: {fileID: 646165798343901501}
   - component: {fileID: 8183241357805492504}
-  - component: {fileID: 1901666335435112886}
   m_Layer: 0
   m_Name: antorcha
   m_TagString: Untagged
@@ -204,27 +203,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &1901666335435112886
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3448765709179069521}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e775fa7ee5bb7d249a0fabbd690d3fbf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3902519142578300394
 GameObject:
   m_ObjectHideFlags: 0
