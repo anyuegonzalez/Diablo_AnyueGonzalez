@@ -11,7 +11,7 @@ public class OcultaParedes : MonoBehaviour
         {
             foreach (Renderer pared in paredes)
             {
-              pared.enabled = false;
+              pared.enabled = true;
             }
         }
     }
@@ -19,7 +19,7 @@ public class OcultaParedes : MonoBehaviour
     {
         foreach (Renderer pared in paredes)
         {
-            pared.enabled = true;
+            pared.enabled = false;
         }
     }
 }
