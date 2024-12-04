@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
             {
                 Debug.Log("Hola!");
                 npcActual = null;
+                agent.isStopped = true;
                 agent.stoppingDistance = 0;
             }
         }
