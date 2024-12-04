@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Outline outline;
+
+    [SerializeField] private Texture2D cursorInteraccion;
+    [SerializeField] private Texture2D cursorPorDefecto;
     void Start()
     {
-        
+        outline = GetComponent<Outline>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+    private void OnMouseEnter()
+    {
+        Cursor.SetCursor(cursorInteraccion, Vector2.zero, CursorMode.Auto);
+        outline.enabled = true;
+    }
+    // cuando quitamos el raton por encima
+    private void OnMouseExit()
+    {
+        Cursor.SetCursor(cursorPorDefecto, Vector2.zero, CursorMode.Auto);
+        outline.enabled = false;
     }
 }
