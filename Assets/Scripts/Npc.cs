@@ -8,9 +8,13 @@ public class Npc : MonoBehaviour
 
     [SerializeField] private Texture2D cursorInteraccion;
     [SerializeField] private Texture2D cursorPorDefecto;
-    void Start()
+    private void Awake()
     {
         outline = GetComponent<Outline>();
+    }
+    void Start()
+    {
+       
     }
 
     void Update()
