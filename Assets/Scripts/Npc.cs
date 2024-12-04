@@ -1,10 +1,13 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Npc : MonoBehaviour
 {
     private Outline outline;
+    [SerializeField] private float tiempoRotacion;
 
     [SerializeField] private Texture2D cursorInteraccion;
     [SerializeField] private Texture2D cursorPorDefecto;
@@ -16,6 +19,7 @@ public class Npc : MonoBehaviour
     public void Interactuar(Transform interactuador)
     {
         Debug.Log("Hola!");
+        transform.DOLookAt(interactuador.position, tiempoRotacion, AxisConstraint.Y);
     }
     private void OnMouseEnter()
     {
