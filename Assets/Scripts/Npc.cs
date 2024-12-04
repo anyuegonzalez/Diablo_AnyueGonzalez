@@ -12,14 +12,10 @@ public class Npc : MonoBehaviour
     {
         outline = GetComponent<Outline>();
     }
-    void Start()
+    // para que el npc se gire hacia el que le esta interactuando (jugador)
+    public void Interactuar(Transform interactuador)
     {
-       
-    }
-
-    void Update()
-    {
-        
+        Debug.Log("Hola!");
     }
     private void OnMouseEnter()
     {

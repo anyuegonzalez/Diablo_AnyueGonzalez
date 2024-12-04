@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
             // comprobar si ha llegado al npc
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
             {
-                Debug.Log("Hola!");
+                npcActual.Interactuar(this.transform); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
                 npcActual = null;
                 agent.isStopped = true;
                 agent.stoppingDistance = 0;
