@@ -18,8 +18,7 @@ public class Npc : MonoBehaviour
     // para que el npc se gire hacia el que le esta interactuando (jugador)
     public void Interactuar(Transform interactuador)
     {
-        transform.DOLookAt(interactuador.position, tiempoRotacion, AxisConstraint.Y).OnComplete(()=> SistemaDialogo.trono.IniciarDialogo());
-        SistemaDialogo.trono.IniciarDialogo();
+        transform.DOLookAt(interactuador.position, tiempoRotacion, AxisConstraint.Y).OnComplete(()=> SistemaDialogo.trono.IniciarDialogo(dialogo));
     }
     private void OnMouseEnter()
     {  

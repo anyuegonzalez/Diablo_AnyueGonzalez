@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 614174033}
   - component: {fileID: 614174032}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: gafas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6307,6 +6307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoRotacion: 1
+  dialogo: {fileID: 0}
 --- !u!114 &1165558608
 MonoBehaviour:
   m_ObjectHideFlags: 0
