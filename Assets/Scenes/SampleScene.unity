@@ -2810,6 +2810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551483910}
+  - component: {fileID: 551483911}
   m_Layer: 5
   m_Name: Sistema de dialogo
   m_TagString: Untagged
@@ -2837,6 +2838,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &551483911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551483909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87da62c9b0a6b1348bbff1f6fed2eb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marcos: {fileID: 212933820}
+  textoDialogo: {fileID: 1074089262}
 --- !u!1 &589419788
 GameObject:
   m_ObjectHideFlags: 0
@@ -6292,8 +6307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoRotacion: 1
-  cursorInteraccion: {fileID: 0}
-  cursorPorDefecto: {fileID: 0}
 --- !u!114 &1165558608
 MonoBehaviour:
   m_ObjectHideFlags: 0
