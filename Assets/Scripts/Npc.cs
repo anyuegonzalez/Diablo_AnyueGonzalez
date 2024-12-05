@@ -9,6 +9,8 @@ public class Npc : MonoBehaviour
     private Outline outline;
     [SerializeField] private float tiempoRotacion;
 
+    [SerializeField] private DialogaSO dialogo;
+
     private void Awake()
     {
         outline = GetComponent<Outline>();
