@@ -23,7 +23,11 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        Movimiento();
+        if(Time.timeScale == 1) // si no estamos en pausa
+        {
+            Movimiento();
+        }
+        
 
         // si existe un npc al cual clike
         if(ultimoClick  && ultimoClick.TryGetComponent(out Npc npc))

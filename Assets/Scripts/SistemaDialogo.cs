@@ -35,7 +35,7 @@ public class SistemaDialogo : MonoBehaviour
 
     public void IniciarDialogo(DialogaSO dialogo)
     {
-        Time.timeScale = 0f; // pausamos ek juegaso. 
+        Time.timeScale = 0f; // pausamos el juegaso. 
 
         // el dialogo actual con el que trabajamos es el que me dan por parametro de entrada
         dialogoActual = dialogo;
