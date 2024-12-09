@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SistemaDialogo : MonoBehaviour
@@ -63,17 +64,35 @@ public class SistemaDialogo : MonoBehaviour
         }
         else
         {
-            StartCoroutine(EscribirFrase());
+            indiceFraseActual++; // avanzo indice de frase
+
+            // y si aun me quedan frases
+            if(indiceFraseActual < dialogoActual.frases.Length)
+            {
+                StartCoroutine(EscribirFrase()); // la escribo 
+            }
+            else
+            {
+                TerminarDialogo(); // si no me quedan frases, termino y cierro dialogo
+            }
+            
         }
 
     }
     private void CompletarFrase()
     {
-
+        StopAllCoroutines();
+        // pongo la frase de golpe
+        textoDialogo.text = dialogoActual.frases[indiceFraseActual];
+        escribiendo = false;
     }
     private void TerminarDialogo()
     { 
-    
+      marcos.SetActive(false);
+      StopAllCoroutines();
+      indiceFraseActual = 0; // para posteriores dialogos 
+      escribiendo = false;
+      dialogoActual = null; // ya no tenemos ningun dialogo 
     }
    
 }
