@@ -6307,7 +6307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiempoRotacion: 1
-  dialogo: {fileID: 0}
+  dialogo: {fileID: 11400000, guid: a7614eb2851f99c4fac121147d482039, type: 2}
 --- !u!114 &1165558608
 MonoBehaviour:
   m_ObjectHideFlags: 0
