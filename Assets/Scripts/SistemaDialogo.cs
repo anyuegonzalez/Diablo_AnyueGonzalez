@@ -39,8 +39,14 @@ public class SistemaDialogo : MonoBehaviour
         marcos.SetActive(true);  
     }
     // que el texto aparezca letra a letra
-    private void EscribirFrase()
+    private IEnumerator EscribirFrase()
     {
+        char[] fraseEnLetras = dialogoActual.frases[indiceFraseActual].ToCharArray(); // convierte la frase pero en un array de caracteres
+        foreach (char letra in fraseEnLetras)
+        {
+            textoDialogo.text += letra;
+            yield return new WaitForSeconds(0.02f);
+        }
 
     }
     private void SiguienteFrase()
