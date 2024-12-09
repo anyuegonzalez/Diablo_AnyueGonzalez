@@ -42,11 +42,13 @@ public class SistemaDialogo : MonoBehaviour
     // que el texto aparezca letra a letra
     private IEnumerator EscribirFrase()
     {
+        // limpio el texto antes de poner una nueva frase 
+        textoDialogo.text = "";
         char[] fraseEnLetras = dialogoActual.frases[indiceFraseActual].ToCharArray(); // convierte la frase pero en un array de caracteres
         foreach (char letra in fraseEnLetras)
         {
             textoDialogo.text += letra;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(dialogoActual.tiempoEntreLetras);
         }
 
     }
