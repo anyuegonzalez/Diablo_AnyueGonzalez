@@ -36,7 +36,8 @@ public class SistemaDialogo : MonoBehaviour
     {
         // el dialogo actual con el que trabajamos es el que me dan por parametro de entrada
         dialogoActual = dialogo;
-        marcos.SetActive(true);  
+        marcos.SetActive(true);
+        StartCoroutine(EscribirFrase());
     }
     // que el texto aparezca letra a letra
     private IEnumerator EscribirFrase()
