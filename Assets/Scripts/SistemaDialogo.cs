@@ -10,6 +10,8 @@ public class SistemaDialogo : MonoBehaviour
     [SerializeField] private GameObject marcos;
     [SerializeField] private TMP_Text textoDialogo;
 
+    private DialogaSO dialogoActual; // para almacenar con que dialogo estamos trabajando
+
     private bool escribiendo; // determina si el sistema esta escribiendo o no 
     private int indiceFraseActual; // marca la frase por la que voy 
     private void Awake()
@@ -32,6 +34,8 @@ public class SistemaDialogo : MonoBehaviour
 
     public void IniciarDialogo(DialogaSO dialogo)
     {
+        // el dialogo actual con el que trabajamos es el que me dan por parametro de entrada
+        dialogoActual = dialogo;
         marcos.SetActive(true);  
     }
     // que el texto aparezca letra a letra
