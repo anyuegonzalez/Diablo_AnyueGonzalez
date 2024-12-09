@@ -42,6 +42,8 @@ public class SistemaDialogo : MonoBehaviour
     // que el texto aparezca letra a letra
     private IEnumerator EscribirFrase()
     {
+        escribiendo = true;
+
         // limpio el texto antes de poner una nueva frase 
         textoDialogo.text = "";
         char[] fraseEnLetras = dialogoActual.frases[indiceFraseActual].ToCharArray(); // convierte la frase pero en un array de caracteres
@@ -51,8 +53,21 @@ public class SistemaDialogo : MonoBehaviour
             yield return new WaitForSeconds(dialogoActual.tiempoEntreLetras);
         }
 
+        escribiendo = false;
     }
     public void SiguienteFrase()
+    {
+        if(escribiendo) // si estamos escribiendo una frase... 
+        {
+            CompletarFrase();
+        }
+        else
+        {
+            StartCoroutine(EscribirFrase());
+        }
+
+    }
+    private void CompletarFrase()
     {
 
     }
