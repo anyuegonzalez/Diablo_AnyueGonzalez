@@ -52,7 +52,7 @@ public class SistemaDialogo : MonoBehaviour
         }
 
     }
-    private void SiguienteFrase()
+    public void SiguienteFrase()
     {
 
     }
