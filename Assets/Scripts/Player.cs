@@ -13,7 +13,8 @@ public class Player : MonoBehaviour
     private Camera cam;
 
     // guardo informacion del npc actual con el que voy a hablar
-    private Npc npcActual;
+    private Transform ultimoClick;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -25,16 +26,19 @@ public class Player : MonoBehaviour
         Movimiento();
 
         // si existe un npc al cual clike
-        if(npcActual)
+        if(ultimoClick  && ultimoClick.TryGetComponent(out Npc npc))
         {
+            agent.stoppingDistance = distanciaInteraccion;
             // comprobar si ha llegado al npc
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
             {
-                npcActual.Interactuar(this.transform); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
-                npcActual = null;
-                agent.isStopped = true;
-                agent.stoppingDistance = 0;
+                npc.Interactuar(this.transform); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
+                ultimoClick = null;
             }
+        }
+        else if(ultimoClick)
+        {
+            agent.stoppingDistance = 0f;
         }
        
     }
@@ -46,16 +50,8 @@ public class Player : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                // mirar a ver si el punto dnd he impactado en el raton tiene el script npc
-                if (hit.transform.TryGetComponent(out Npc npc))
-                {
-                    // y en ese caso ese npc es el actual
-                    npcActual = npc;
-                    //ahora mi distancia de parada es la de interaccion (pararme a X metros del npc)
-                    agent.stoppingDistance = distanciaInteraccion;
-                }
-
                 agent.SetDestination(hit.point);
+                ultimoClick = hit.transform;
             }
 
         }
