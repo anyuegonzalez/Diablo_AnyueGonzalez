@@ -1760,7 +1760,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 61.181374
+  field of view: 4.92
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1787,7 +1787,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: -0.101716205, y: 0.89064664, z: -0.24556467, w: -0.36891782}
-  m_LocalPosition: {x: -6, y: 9.44, z: -12.540001}
+  m_LocalPosition: {x: -3.7799997, y: 9.33, z: -12.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7277,7 +7277,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 2108264384}
   m_Follow: {fileID: 2108264384}
   m_Lens:
-    FieldOfView: 61.181374
+    FieldOfView: 4.92
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -7304,7 +7304,7 @@ Transform:
   m_GameObject: {fileID: 1308792603}
   serializedVersion: 2
   m_LocalRotation: {x: -0.10171625, y: 0.89064664, z: -0.24556471, w: -0.36891794}
-  m_LocalPosition: {x: -6, y: 9.44, z: -12.540001}
+  m_LocalPosition: {x: -3.7799997, y: 9.33, z: -12.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11939,9 +11939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2108264384}
   - component: {fileID: 2108264386}
-  - component: {fileID: 2108264383}
   - component: {fileID: 2108264385}
-  - component: {fileID: 2108264382}
   - component: {fileID: 2108264381}
   - component: {fileID: 2108264387}
   m_Layer: 0
@@ -11974,56 +11972,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2108264382
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108264380}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2108264383
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108264380}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2108264384
 Transform:
   m_ObjectHideFlags: 0
@@ -12033,7 +11981,7 @@ Transform:
   m_GameObject: {fileID: 2108264380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: 0.99999994, z: -22.54}
+  m_LocalPosition: {x: -13.78, y: 0.89, z: -22.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13676,7 +13624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4389307365437424361}
   m_Layer: 0
-  m_Name: Maria J J Ong (1)
+  m_Name: PlayerVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13738,7 +13686,7 @@ Transform:
   m_GameObject: {fileID: 4008805545956284499}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.45, y: -1, z: -0.27}
+  m_LocalPosition: {x: 0.22999954, y: -0.89, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
