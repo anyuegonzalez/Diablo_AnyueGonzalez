@@ -18,6 +18,7 @@ public class PlayerVisual : MonoBehaviour
     }
     void Update()
     {
+        // todos lso frames voy actualizanco mi velocity en funcion de mi velocidad actual
         anim.SetFloat("velocity", agent.velocity.magnitude / agent.speed);
     }
 }
