@@ -4943,7 +4943,6 @@ GameObject:
   m_Component:
   - component: {fileID: 925100824}
   - component: {fileID: 925100827}
-  - component: {fileID: 925100826}
   - component: {fileID: 925100825}
   m_Layer: 0
   m_Name: NPCCamera
@@ -4990,7 +4989,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -5011,14 +5010,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &925100826
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925100823}
-  m_Enabled: 1
 --- !u!20 &925100827
 Camera:
   m_ObjectHideFlags: 0
