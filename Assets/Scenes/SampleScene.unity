@@ -4945,7 +4945,7 @@ GameObject:
   - component: {fileID: 925100827}
   - component: {fileID: 925100825}
   m_Layer: 0
-  m_Name: NPCCamera
+  m_Name: NPC_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
