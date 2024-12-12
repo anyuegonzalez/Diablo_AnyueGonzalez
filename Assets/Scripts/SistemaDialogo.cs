@@ -10,6 +10,7 @@ public class SistemaDialogo : MonoBehaviour
 
     [SerializeField] private GameObject marcos;
     [SerializeField] private TMP_Text textoDialogo;
+    [SerializeField] private Transform npcCamera;
 
     private DialogaSO dialogoActual; // para almacenar con que dialogo estamos trabajando
 
@@ -33,10 +34,11 @@ public class SistemaDialogo : MonoBehaviour
 
     }
 
-    public void IniciarDialogo(DialogaSO dialogo)
+    public void IniciarDialogo(DialogaSO dialogo, Transform cameraPoint)
     {
         Time.timeScale = 0f; // pausamos el juegaso. 
 
+        npcCamera.SetPositionAndRotation(cameraPoint.position, cameraPoint.rotation);
         // el dialogo actual con el que trabajamos es el que me dan por parametro de entrada
         dialogoActual = dialogo;
         marcos.SetActive(true);

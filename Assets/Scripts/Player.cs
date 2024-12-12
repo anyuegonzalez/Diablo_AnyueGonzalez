@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
             {
                 
-                transform.DOLookAt(npc.transform.position, tiempoRotacion, AxisConstraint.Y).OnComplete( () => LanzarInteraccion(npc));
+               LanzarInteraccion(npc);
                 
             }
         }

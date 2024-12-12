@@ -11,6 +11,7 @@ public class Npc : MonoBehaviour
 
     [SerializeField] private DialogaSO dialogo;
 
+    [SerializeField] private Transform cameraPoint;
     private void Awake()
     {
         outline = GetComponent<Outline>();
@@ -18,7 +19,7 @@ public class Npc : MonoBehaviour
     // para que el npc se gire hacia el que le esta interactuando (jugador)
     public void Interactuar(Transform interactuador)
     {
-        transform.DOLookAt(interactuador.position, tiempoRotacion, AxisConstraint.Y).OnComplete(()=> SistemaDialogo.trono.IniciarDialogo(dialogo));
+        transform.DOLookAt(interactuador.position, tiempoRotacion, AxisConstraint.Y).OnComplete(()=> SistemaDialogo.trono.IniciarDialogo(dialogo, cameraPoint));
     }
     private void OnMouseEnter()
     {  
