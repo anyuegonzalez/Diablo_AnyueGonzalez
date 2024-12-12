@@ -4316,12 +4316,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 784345752}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &793031902 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6741273975464263762, guid: f667ba980bfd1a3478adcd34d0692554,
-    type: 3}
-  m_PrefabInstance: {fileID: 8507949754858979986}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &793426781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4994,8 +4988,8 @@ Camera:
   m_GameObject: {fileID: 925100823}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5566038, g: 0.15490389, b: 0.20376828, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5024,7 +5018,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 64
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 5d239837179ba234084ff918d7776cbe, type: 2}
   m_TargetDisplay: 0
@@ -15141,11 +15135,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: cameraPoint
-      value: 
-      objectReference: {fileID: 793031902}
     - target: {fileID: 1653525539066942491, guid: f667ba980bfd1a3478adcd34d0692554,
         type: 3}
       propertyPath: m_Name
