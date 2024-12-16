@@ -7,7 +7,7 @@ public class SistemaPatrulla : MonoBehaviour
 {
     [SerializeField] private Transform ruta;
 
-    private NavMeshAgent agent;
+    [SerializeField] NavMeshAgent agent;
 
     List<Vector3> listadoPuntos = new List<Vector3>();
 
@@ -16,7 +16,6 @@ public class SistemaPatrulla : MonoBehaviour
     private int indiceRutaActual = -1; // marca el indice del nuevo punto al cual patrullar
     private void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
         // voy recorriendo todos los puntos que tine mi ruta
         foreach (Transform punto in ruta)
         {

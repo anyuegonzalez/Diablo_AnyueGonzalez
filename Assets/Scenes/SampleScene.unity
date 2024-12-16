@@ -7944,6 +7944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c16a7b3078de44393927b243daeaaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ruta: {fileID: 752889245}
+  agent: {fileID: 1573680535}
 --- !u!4 &817282378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4567515243235875381, guid: 17d20bdc0fad63b42817d0d466336548,
@@ -15147,7 +15149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fdcffc28838bc4fa9c704a29cff07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ruta: {fileID: 752889245}
 --- !u!195 &1573680535
 NavMeshAgent:
   m_ObjectHideFlags: 0
