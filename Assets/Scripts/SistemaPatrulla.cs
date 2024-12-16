@@ -31,10 +31,12 @@ public class SistemaPatrulla : MonoBehaviour
 
     private IEnumerator PatrullarYEsperar()
     {
-        while (true)
+        while (true) // por siempre,,,
         {
-            CalcularDestino();
-            agent.SetDestination(destinoActual);
+            CalcularDestino(); // 1. calculas un nuvo destino 
+            agent.SetDestination(destinoActual); // 2. se te marca dicho destino
+
+            //3. esperas a llegar a dicho destino y repites
             yield return new WaitUntil( ()=> !agent.pathPending && agent.remainingDistance <= 0.2f); // espera hasta que llegues a ese punto
 
         }
