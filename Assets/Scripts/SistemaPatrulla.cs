@@ -22,8 +22,7 @@ public class SistemaPatrulla : MonoBehaviour
         {
             // y los añado en mi lista
             listadoPuntos.Add(punto.position);
-        }
-        CalcularDestino();
+        }    
     }
     void Start()
     {
@@ -32,8 +31,13 @@ public class SistemaPatrulla : MonoBehaviour
 
     private IEnumerator PatrullarYEsperar()
     {
-        agent.SetDestination(destinoActual);
-        yield return null;
+        while (true)
+        {
+            CalcularDestino();
+            agent.SetDestination(destinoActual);
+            yield return null; // espera hasta que llegues a ese punto
+        }
+       
     }
     private void CalcularDestino()
     {
