@@ -56,4 +56,8 @@ public class SistemaPatrulla : MonoBehaviour
         }
         destinoActual = listadoPuntos[indiceRutaActual];
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 }
