@@ -35,7 +35,8 @@ public class SistemaPatrulla : MonoBehaviour
         {
             CalcularDestino();
             agent.SetDestination(destinoActual);
-            yield return new WaitUntil( () => agent.remainingDistance <= 0.2f); // espera hasta que llegues a ese punto
+            yield return new WaitUntil( ()=> !agent.pathPending && agent.remainingDistance <= 0.2f); // espera hasta que llegues a ese punto
+
         }
        
     }
