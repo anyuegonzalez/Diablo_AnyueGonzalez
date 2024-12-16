@@ -14,6 +14,8 @@ public class SistemaPatrulla : MonoBehaviour
     private Vector3 destinoActual; // marca el destino actual al cual tenemos que ir
 
     private int indiceRutaActual = -1; // marca el indice del nuevo punto al cual patrullar
+    private int tiempoEntrePuntos;
+
     private void Awake()
     {
         // voy recorriendo todos los puntos que tine mi ruta
@@ -37,6 +39,8 @@ public class SistemaPatrulla : MonoBehaviour
 
             //3. esperas a llegar a dicho destino y repites
             yield return new WaitUntil( ()=> !agent.pathPending && agent.remainingDistance <= 0.2f); // espera hasta que llegues a ese punto
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
+
 
         }
        
