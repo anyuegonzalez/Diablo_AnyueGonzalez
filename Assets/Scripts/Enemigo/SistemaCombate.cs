@@ -5,9 +5,13 @@ using UnityEngine;
 public class SistemaCombate : MonoBehaviour
 {
     [SerializeField] private Enemigo main;
-    void Start()
+    private void Awake()
     {
         main.Combate = this;
+    }
+    void Start()
+    {
+       
     }
     void Update()
     {

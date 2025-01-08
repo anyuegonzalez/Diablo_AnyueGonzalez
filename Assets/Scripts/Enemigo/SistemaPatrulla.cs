@@ -19,6 +19,8 @@ public class SistemaPatrulla : MonoBehaviour
 
     private void Awake()
     {
+        // comunico al main que el sistema de patrulla soy yo 
+        main.Patrulla = this;
         // voy recorriendo todos los puntos que tine mi ruta
         foreach (Transform punto in ruta)
         {
@@ -27,9 +29,7 @@ public class SistemaPatrulla : MonoBehaviour
         }    
     }
     void Start()
-    {
-        // comunico al main que el sistema de patrulla soy yo 
-        main.Patrulla = this;   
+    {  
         StartCoroutine(PatrullarYEsperar());
     }
 
