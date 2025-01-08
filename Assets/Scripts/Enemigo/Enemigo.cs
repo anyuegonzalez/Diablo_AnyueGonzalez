@@ -11,5 +11,10 @@ public class Enemigo : MonoBehaviour
 
     public SistemaCombate Combate { get => combate; set => combate = value; }
     public SistemaPatrulla Patrulla { get => patrulla; set => patrulla = value; }
+
+    public void activaCombate()
+    {
+        Debug.Log("Combate Activado");
+    }
 }    
 
