@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SistemaCombate : MonoBehaviour
 {
-    
+    [SerializeField] private Enemigo main;
     void Start()
     {
-        
+        main.Combate = this;
     }
     void Update()
     {
