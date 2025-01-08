@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class SistemaPatrulla : MonoBehaviour
 {
+    [SerializeField] private Enemigo main;
     [SerializeField] private Transform ruta;
 
     [SerializeField] NavMeshAgent agent;
@@ -27,6 +28,8 @@ public class SistemaPatrulla : MonoBehaviour
     }
     void Start()
     {
+        // comunico al main que el sistema de patrulla soy yo 
+        main.Patrulla = this;   
         StartCoroutine(PatrullarYEsperar());
     }
 
