@@ -20,6 +20,7 @@ public class SistemaCombate : MonoBehaviour
     }
     void Update()
     {
+        agent.speed = velocidadCombate;
         agent.SetDestination(main.MainTarget.position);
     }
 }
