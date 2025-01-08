@@ -12880,6 +12880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 1573680534}
   velocidadCombate: 5
+  distanciaAtaque: 2
   agent: {fileID: 1573680535}
 --- !u!1 &1322612643
 GameObject:
