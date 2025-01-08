@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Enemigo : MonoBehaviour
 {
+
+    private Transform mainTarget;
     private SistemaCombate combate;
     private SistemaPatrulla patrulla;
 
@@ -18,8 +20,11 @@ public class Enemigo : MonoBehaviour
         patrulla.enabled = true;
     }
 
-    public void activaCombate()
+    public void ActivaCombate(Transform target)
     {
+        // ahora tenemos un target al cual perseguir 
+        mainTarget = target;
+
         // aqui nos dicen de activar el combate
         combate.enabled = true;
     }

@@ -63,7 +63,7 @@ public class SistemaPatrulla : MonoBehaviour
     {
         if (other.CompareTag("Player")) // si lo que se ha metido en el collider es el player
         {
-            main.activaCombate();
+            main.ActivaCombate(other.transform);
             this.enabled = false; // deshabilito patrulla
             StopAllCoroutines(); // paro corrutinas 
         }
