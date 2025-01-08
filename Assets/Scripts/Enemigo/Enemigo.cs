@@ -12,9 +12,16 @@ public class Enemigo : MonoBehaviour
     public SistemaCombate Combate { get => combate; set => combate = value; }
     public SistemaPatrulla Patrulla { get => patrulla; set => patrulla = value; }
 
+    private void Start()
+    {
+        // empieza el juego y activamos la patrulla
+        patrulla.enabled = true;
+    }
+
     public void activaCombate()
     {
-        Debug.Log("Combate Activado");
+        // aqui nos dicen de activar el combate
+        combate.enabled = true;
     }
 }    
 
