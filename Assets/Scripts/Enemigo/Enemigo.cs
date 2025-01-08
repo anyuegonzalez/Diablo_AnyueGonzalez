@@ -13,6 +13,7 @@ public class Enemigo : MonoBehaviour
 
     public SistemaCombate Combate { get => combate; set => combate = value; }
     public SistemaPatrulla Patrulla { get => patrulla; set => patrulla = value; }
+    public Transform MainTarget { get => mainTarget; }
 
     private void Start()
     {

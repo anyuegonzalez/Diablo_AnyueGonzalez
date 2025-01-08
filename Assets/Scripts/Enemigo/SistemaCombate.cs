@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SistemaCombate : MonoBehaviour
 {
     [SerializeField] private Enemigo main;
+    [SerializeField] private float velocidadCombate;
+    [SerializeField] private NavMeshAgent agent;
+
+
     private void Awake()
     {
         main.Combate = this;
@@ -15,6 +20,6 @@ public class SistemaCombate : MonoBehaviour
     }
     void Update()
     {
-        
+        agent.SetDestination(main.MainTarget.position);
     }
 }
