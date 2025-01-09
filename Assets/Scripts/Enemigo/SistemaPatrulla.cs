@@ -7,6 +7,7 @@ public class SistemaPatrulla : MonoBehaviour
 {
     [SerializeField] private Enemigo main;
     [SerializeField] private Transform ruta;
+    [SerializeField] private float velocidadPatrulla;
 
     [SerializeField] NavMeshAgent agent;
 
@@ -28,9 +29,15 @@ public class SistemaPatrulla : MonoBehaviour
             listadoPuntos.Add(punto.position);
         }    
     }
+    private void OnEnable()
+    {
+        indiceRutaActual = -1; // empiezo la ruta desde el comienzo
+        agent.speed = velocidadPatrulla; // vuelvo a la velocidad de patrulla 
+        StartCoroutine(PatrullarYEsperar()); // empieza la corrutina
+    }
     void Start()
     {  
-        StartCoroutine(PatrullarYEsperar());
+        
     }
 
     private IEnumerator PatrullarYEsperar()
