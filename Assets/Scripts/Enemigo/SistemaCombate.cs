@@ -26,7 +26,7 @@ public class SistemaCombate : MonoBehaviour
     {
 
         // si el target es alcanzable y ese target es alcanzable... 
-        if(main.MainTarget && agent.CalculatePath(main.MainTarget.position, new NavMeshPath()))
+        if(main.MainTarget != null && agent.CalculatePath(main.MainTarget.position, new NavMeshPath()))
         {
             // voy persiguiendo al target en todo momento (calculando su posicion)
             agent.SetDestination(main.MainTarget.position);
