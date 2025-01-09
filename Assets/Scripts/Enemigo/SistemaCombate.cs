@@ -10,6 +10,7 @@ public class SistemaCombate : MonoBehaviour
     [SerializeField] private float distanciaAtaque;
     [SerializeField] private NavMeshAgent agent;
 
+    [SerializeField] private Animator anim;
 
     private void Awake()
     {
@@ -30,6 +31,12 @@ public class SistemaCombate : MonoBehaviour
         {
             // voy persiguiendo al target en todo momento (calculando su posicion)
             agent.SetDestination(main.MainTarget.position);
+
+            if(agent.remainingDistance <= distanciaAtaque)
+            {
+                anim.SetBool("attacking", true);
+            }
+          
         }
         else // si no es alcanzable
         {
