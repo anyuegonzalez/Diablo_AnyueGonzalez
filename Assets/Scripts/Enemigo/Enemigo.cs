@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,12 @@ public class Enemigo : MonoBehaviour
 
         // aqui nos dicen de activar el combate
         combate.enabled = true;
+    }
+
+    public void ActivarPatrulla()
+    {
+        combate.enabled = false;
+        patrulla.enabled = true;
     }
 }    
 

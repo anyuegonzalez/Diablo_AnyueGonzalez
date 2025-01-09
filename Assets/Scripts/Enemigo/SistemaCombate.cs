@@ -22,13 +22,19 @@ public class SistemaCombate : MonoBehaviour
         agent.speed = velocidadCombate;
         agent.stoppingDistance = distanciaAtaque;
     }
-
-    void Start()
-    {
-       
-    }
     void Update()
-    {    
-        agent.SetDestination(main.MainTarget.position);
+    {
+
+        // si el target es alcanzable y ese target es alcanzable... 
+        if(main.MainTarget && agent.CalculatePath(main.MainTarget.position, new NavMeshPath()))
+        {
+            // voy persiguiendo al target en todo momento (calculando su posicion)
+            agent.SetDestination(main.MainTarget.position);
+        }
+        else // si no es alcanzable
+        {
+            main.ActivarPatrulla();
+        }
+        
     }
 }
