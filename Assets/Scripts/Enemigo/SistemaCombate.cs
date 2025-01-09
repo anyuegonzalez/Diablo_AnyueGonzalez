@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,7 @@ public class SistemaCombate : MonoBehaviour
         // si el target es alcanzable y ese target es alcanzable... 
         if(main.MainTarget != null && agent.CalculatePath(main.MainTarget.position, new NavMeshPath()))
         {
+            EnfocarObjetivo();
             // voy persiguiendo al target en todo momento (calculando su posicion)
             agent.SetDestination(main.MainTarget.position);
 
@@ -43,5 +45,14 @@ public class SistemaCombate : MonoBehaviour
             main.ActivarPatrulla();
         }
         
+    }
+
+    private void EnfocarObjetivo()
+    {
+        Vector3 direccionATarget = (main.MainTarget.position - this.transform.position).normalized;
+        direccionATarget.y = 0;
+        Quaternion rotacionATarget = Quaternion.LookRotation(direccionATarget);
+        transform.rotation = rotacionATarget;
+
     }
 }
