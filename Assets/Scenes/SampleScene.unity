@@ -8182,6 +8182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 1573680534}
   ruta: {fileID: 752889245}
+  velocidadPatrulla: 1.5
   agent: {fileID: 1573680535}
 --- !u!135 &816626179
 SphereCollider:
