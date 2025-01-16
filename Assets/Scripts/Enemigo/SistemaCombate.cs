@@ -46,7 +46,6 @@ public class SistemaCombate : MonoBehaviour
         }
         
     }
-
     private void EnfocarObjetivo()
     {
         Vector3 direccionATarget = (main.MainTarget.position - this.transform.position).normalized;
@@ -55,4 +54,15 @@ public class SistemaCombate : MonoBehaviour
         transform.rotation = rotacionATarget;
 
     }
+    #region Ejecutados por eventos de animacion
+    private void Atacar()
+    {
+
+    }
+    private void FinAnimacionAtaque()
+    {
+
+    }
+    #endregion
+
 }
