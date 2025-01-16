@@ -12,7 +12,7 @@ public class Cofre : MonoBehaviour, IInteractuable
 
     public void Interactuar(Transform interactuador)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     private void Awake()
