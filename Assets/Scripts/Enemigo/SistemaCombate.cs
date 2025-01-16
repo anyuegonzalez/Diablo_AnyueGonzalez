@@ -8,6 +8,7 @@ public class SistemaCombate : MonoBehaviour
 {
     [SerializeField] private Enemigo main;
     [SerializeField] private float velocidadCombate;
+    [SerializeField] private float danhoAtaque;
     [SerializeField] private float distanciaAtaque;
     [SerializeField] private NavMeshAgent agent;
 
@@ -57,7 +58,7 @@ public class SistemaCombate : MonoBehaviour
     #region Ejecutados por eventos de animacion
     private void Atacar()
     {
-        
+        main.MainTarget.GetComponent<Player>().HacerDanho(danhoAtaque);
     }
     private void FinAnimacionAtaque()
     {
