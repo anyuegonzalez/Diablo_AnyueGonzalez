@@ -34,7 +34,7 @@ public class SistemaCombate : MonoBehaviour
             // voy persiguiendo al target en todo momento (calculando su posicion)
             agent.SetDestination(main.MainTarget.position);
 
-            if(agent.remainingDistance <= distanciaAtaque)
+            if(!agent.pathPending && agent.remainingDistance <= distanciaAtaque)
             {
                 anim.SetBool("attacking", true);
             }
