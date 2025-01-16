@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cofre : MonoBehaviour
+public class Cofre : MonoBehaviour, IInteractuable
 {
 
     private Outline outline;
@@ -10,19 +10,15 @@ public class Cofre : MonoBehaviour
     [SerializeField] private Texture2D cursorInteraccion;
     [SerializeField] private Texture2D cursorPorDefecto;
 
-    private void Awake()
-    {
-        outline = GetComponent<Outline>();
-    }
-    void Start()
-    {
-        
-    }
-    void Update()
+    public void Interactuar()
     {
         
     }
 
+    private void Awake()
+    {
+        outline = GetComponent<Outline>();
+    }
 
     // cuando pasamos el raton por encima
     private void OnMouseEnter()

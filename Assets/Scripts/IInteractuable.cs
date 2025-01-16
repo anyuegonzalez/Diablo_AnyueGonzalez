@@ -6,5 +6,5 @@ using UnityEngine;
 // en este caso sea INERACTUABLE.
 public interface IInteractuable 
 {
-    
+    public void Interactuar(Transform interactuador);
 }

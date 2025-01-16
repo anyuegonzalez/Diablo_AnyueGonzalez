@@ -32,13 +32,13 @@ public class Player : MonoBehaviour
         }
         
         // si existe un npc al cual clike
-        if(ultimoClick  && ultimoClick.TryGetComponent(out Npc npc))
+        if(ultimoClick  && ultimoClick.TryGetComponent(out IInteractuable interactuable))
         {
             agent.stoppingDistance = distanciaInteraccion;
             // comprobar si ha llegado al npc
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
             {  
-               LanzarInteraccion(npc);  
+               LanzarInteraccion(interactuable);  
             }
         }
         else if(ultimoClick)
@@ -47,9 +47,9 @@ public class Player : MonoBehaviour
         }
        
     }
-    private void LanzarInteraccion(Npc npc)
+    private void LanzarInteraccion(IInteractuable interactuable)
     {
-        npc.Interactuar(this.transform); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
+        interactuable.Interactuar(); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
         ultimoClick = null;
     }
     private void Movimiento()
