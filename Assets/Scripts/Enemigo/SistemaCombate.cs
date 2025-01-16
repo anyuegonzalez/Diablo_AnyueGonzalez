@@ -57,11 +57,11 @@ public class SistemaCombate : MonoBehaviour
     #region Ejecutados por eventos de animacion
     private void Atacar()
     {
-
+        
     }
     private void FinAnimacionAtaque()
     {
-
+        anim.SetBool("attacking", false);
     }
     #endregion
 
