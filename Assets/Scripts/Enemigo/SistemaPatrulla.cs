@@ -33,14 +33,10 @@ public class SistemaPatrulla : MonoBehaviour
     {
         indiceRutaActual = -1; // empiezo la ruta desde el comienzo
         agent.speed = velocidadPatrulla; // vuelvo a la velocidad de patrulla 
+        agent.stoppingDistance = 0;
         StartCoroutine(PatrullarYEsperar()); // empieza la corrutina
     }
-    void Start()
-    {  
-        
-    }
-
-    private IEnumerator PatrullarYEsperar()
+    private IEnumerator PatrullarYEsperar() // corrutina
     {
         while (true) // por siempre,,,
         {
@@ -49,7 +45,7 @@ public class SistemaPatrulla : MonoBehaviour
 
             //3. esperas a llegar a dicho destino y repites
             yield return new WaitUntil( ()=> !agent.pathPending && agent.remainingDistance <= 0.2f); // espera hasta que llegues a ese punto
-            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
+            yield return new WaitForSeconds(Random.Range(0.25f, 3f));
 
 
         }
