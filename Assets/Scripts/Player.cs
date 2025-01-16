@@ -73,6 +73,6 @@ public class Player : MonoBehaviour
 
     internal void HacerDanho(float danhoAtaque)
     {
-        throw new NotImplementedException();
+        
     }
 }
