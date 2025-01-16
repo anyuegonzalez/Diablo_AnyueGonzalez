@@ -37,10 +37,8 @@ public class Player : MonoBehaviour
             agent.stoppingDistance = distanciaInteraccion;
             // comprobar si ha llegado al npc
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
-            {
-                
-               LanzarInteraccion(npc);
-                
+            {  
+               LanzarInteraccion(npc);  
             }
         }
         else if(ultimoClick)
