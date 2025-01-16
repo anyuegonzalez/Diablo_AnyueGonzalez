@@ -10,9 +10,9 @@ public class Cofre : MonoBehaviour, IInteractuable
     [SerializeField] private Texture2D cursorInteraccion;
     [SerializeField] private Texture2D cursorPorDefecto;
 
-    public void Interactuar()
+    public void Interactuar(Transform interactuador)
     {
-        
+        throw new System.NotImplementedException();
     }
 
     private void Awake()
