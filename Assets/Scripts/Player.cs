@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     }
     private void LanzarInteraccion(IInteractuable interactuable)
     {
-        interactuable.Interactuar(); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
+        interactuable.Interactuar(this.transform); // el transform es un gameobject, es porq hemos puesto Transform en el codigo de npc
         ultimoClick = null;
     }
     private void Movimiento()
