@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class Npc : MonoBehaviour
+public class Npc : MonoBehaviour, IInteractuable
 {
     private Outline outline;
     [SerializeField] private float tiempoRotacion;
@@ -29,5 +29,9 @@ public class Npc : MonoBehaviour
     private void OnMouseExit()
     {
         outline.enabled = false;
+    }
+    private void IniciarDialogo()
+    {
+        //SistemaDialogo.sD.IniciarDialogo(dialogo, punto.Camara);
     }
 }
