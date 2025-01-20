@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    [SerializeField] private Player main;
     private Animator anim;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+
+        // le digo 
+        main.PlayerAnimations = this;
     }
 
     void Start()
     {
         
     }
-
-  
     void Update()
     {
         

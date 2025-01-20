@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] private float distanciaInteraccion;
+    [SerializeField] private float distanciaAtaque;
     [SerializeField] private float tiempoRotacion;
 
     private NavMeshAgent agent;
@@ -17,6 +18,10 @@ public class Player : MonoBehaviour
 
     // guardo informacion del npc actual con el que voy a hablar
     private Transform ultimoClick;
+
+    private PlayerAnimation playerAnimations;
+
+    public PlayerAnimation PlayerAnimations { get => playerAnimations; set => playerAnimations = value; }
 
     void Start()
     {
@@ -40,6 +45,10 @@ public class Player : MonoBehaviour
             {  
                LanzarInteraccion(interactuable);  
             }
+        }
+        else if(ultimoClick && ultimoClick.TryGetComponent(out Enemigo enemigo))
+        {
+
         }
         else if(ultimoClick)
         {
