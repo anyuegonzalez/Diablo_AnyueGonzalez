@@ -12,7 +12,7 @@ public class CamaraMinimapa : MonoBehaviour
         // miro la distanncia original que se tiene en escena
         distanciaAPlayer = transform.position - player.transform.position;
     }
-    void Update()
+    void LateUpdate()
     {
         // mi posicion en todos los frames es la del player + cierta distancia
         transform.position = player.transform.position + distanciaAPlayer;
