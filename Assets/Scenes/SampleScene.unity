@@ -3090,7 +3090,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 255
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -15438,7 +15438,7 @@ GameObject:
   - component: {fileID: 1560322365}
   - component: {fileID: 1560322367}
   - component: {fileID: 1560322366}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ImagenFlecha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23530,7 +23530,7 @@ GameObject:
   - component: {fileID: 4457210943449327121}
   - component: {fileID: 3292218403492368782}
   - component: {fileID: 7412851709244725156}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: LocalCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
