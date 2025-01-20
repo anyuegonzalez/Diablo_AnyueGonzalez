@@ -13303,6 +13303,7 @@ GameObject:
   - component: {fileID: 1363076712}
   - component: {fileID: 1363076711}
   - component: {fileID: 1363076709}
+  - component: {fileID: 1363076713}
   m_Layer: 0
   m_Name: CamaraMinimapa
   m_TagString: Untagged
@@ -13420,6 +13421,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1363076713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363076708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f58b5ad473a344592e0a04df6c5965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2108264386}
 --- !u!1001 &1367408211
 PrefabInstance:
   m_ObjectHideFlags: 0
