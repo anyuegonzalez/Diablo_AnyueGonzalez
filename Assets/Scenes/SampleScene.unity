@@ -9308,7 +9308,7 @@ GameObject:
   - component: {fileID: 925100824}
   - component: {fileID: 925100827}
   - component: {fileID: 925100825}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NPC_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
