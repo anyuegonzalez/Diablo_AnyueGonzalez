@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Dialogo1
   m_EditorClassIdentifier: 
   frases:
-  - Hi, there! So many adventures are waiting for you out there
-  - 'Marcians are my parents, i come from the sun '
-  - Do you like apples? What about jazz, maybe? What else. you're a strange person
+  - Hola aventurero, mi abuelita esta enferma y solo se puede curar con una medicina
+    infernanal
+  - Para poder cocinar la medicina necesito conseguir 3 setas de la muerte
+  - "Me las podr\xEDas conseguir por favor?"
   tiempoEntreLetras: 0.02
