@@ -2577,6 +2577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6caffa30d89014297dfeeed19a711c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventManager: {fileID: 11400000, guid: 874b6904bd75b5a48a71e70827013a98, type: 2}
+  toggleMision: {fileID: 1110854981}
 --- !u!1001 &237692739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5854,7 +5856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87da62c9b0a6b1348bbff1f6fed2eb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventManager: {fileID: 0}
+  eventManager: {fileID: 11400000, guid: 874b6904bd75b5a48a71e70827013a98, type: 2}
   marcos: {fileID: 212933820}
   textoDialogo: {fileID: 1074089262}
   npcCamera: {fileID: 925100824}
