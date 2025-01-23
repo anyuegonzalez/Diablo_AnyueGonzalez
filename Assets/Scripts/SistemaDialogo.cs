@@ -8,6 +8,8 @@ public class SistemaDialogo : MonoBehaviour
 {
     public static SistemaDialogo trono; // varios candidatos, el primero que llega se lo encuentra vacio y dice y el trono pa quien? pa mi, me quedo como un rey, si viene otro tipo me mato porque soy un rey falso
 
+    [SerializeField] private EventManagerSO eventManager;
+
     [SerializeField] private GameObject marcos;
     [SerializeField] private TMP_Text textoDialogo;
     [SerializeField] private Transform npcCamera;
@@ -91,14 +93,21 @@ public class SistemaDialogo : MonoBehaviour
         escribiendo = false;
     }
     private void TerminarDialogo()
-    { 
+    {
+      Time.timeScale = 1f;
       marcos.SetActive(false);
       StopAllCoroutines();
       indiceFraseActual = 0; // para posteriores dialogos 
       escribiendo = false;
-      dialogoActual = null; // ya no tenemos ningun dialogo 
-      Time.timeScale = 1f;
+      
 
+      if(dialogoActual.tieneMision)
+      {
+            eventManager.NuevaMision();
+      }
+
+      
+      dialogoActual = null; // ya no tenemos ningun dialogo 
     }
    
 }

@@ -18,3 +18,5 @@ MonoBehaviour:
   - Para poder cocinar la medicina necesito conseguir 3 setas de la muerte
   - "Me las podr\xEDas conseguir por favor?"
   tiempoEntreLetras: 0.02
+  tieneMision: 1
+  textoMision: Consigue tres setas de la muerte (0/3)
