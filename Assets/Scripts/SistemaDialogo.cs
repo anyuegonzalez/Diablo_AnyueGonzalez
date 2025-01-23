@@ -95,6 +95,7 @@ public class SistemaDialogo : MonoBehaviour
     private void TerminarDialogo()
     {
       Time.timeScale = 1f;
+
       marcos.SetActive(false);
       StopAllCoroutines();
       indiceFraseActual = 0; // para posteriores dialogos 
