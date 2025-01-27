@@ -11,6 +11,9 @@ public class EventManagerSO : ScriptableObject
     public void NuevaMision(MisionSO mision)
     {
         // aqui lanzo la notificacion (el evento) por si a alguien le interesa
-        OnNuevaMision.Invoke(mision);
+        
+        // ?. : invocacion segura. se asegura de que haya suscriptores
+        // si no hay invocacion segura el juego peta
+        OnNuevaMision?.Invoke(mision);
     }
 }
