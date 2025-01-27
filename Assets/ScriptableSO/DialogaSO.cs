@@ -12,7 +12,8 @@ public class DialogaSO : ScriptableObject
     
     public float tiempoEntreLetras;
     public bool tieneMision;
-    public string textoMision;
+    //public string textoMision;
 
+    public MisionSO mision;
 
 }

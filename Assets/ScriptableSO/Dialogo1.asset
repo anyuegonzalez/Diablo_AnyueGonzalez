@@ -19,4 +19,4 @@ MonoBehaviour:
   - "Me las podr\xEDas conseguir por favor?"
   tiempoEntreLetras: 0.02
   tieneMision: 1
-  textoMision: Consigue tres setas de la muerte (0/3)
+  mision: {fileID: 11400000, guid: 80a7736688c2ee64384f627875fc9451, type: 2}
