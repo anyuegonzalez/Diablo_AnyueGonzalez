@@ -2900,7 +2900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91280a462005fb344b6f3053233f0d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoMision: {fileID: 0}
+  textoMision: {fileID: 826224263}
 --- !u!1001 &252673706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11595,7 +11595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91280a462005fb344b6f3053233f0d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoMision: {fileID: 0}
+  textoMision: {fileID: 219565336}
 --- !u!1001 &1119798174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13813,7 +13813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91280a462005fb344b6f3053233f0d46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoMision: {fileID: 0}
+  textoMision: {fileID: 1179874918}
 --- !u!1 &1308792603
 GameObject:
   m_ObjectHideFlags: 0
