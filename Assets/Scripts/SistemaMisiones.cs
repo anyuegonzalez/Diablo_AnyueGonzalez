@@ -13,7 +13,7 @@ public class SistemaMisiones : MonoBehaviour
         eventManager.OnNuevaMision += ActivarToggleMision; // te suscribes al evento porque me interesa para enterarme de que hay una nueva mision
     }
 
-    private void ActivarToggleMision()
+    private void ActivarToggleMision(MisionSO mision)
     {
        toggleMision.SetActive(true);
     }
