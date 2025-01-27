@@ -8,6 +8,9 @@ public class EventManagerSO : ScriptableObject
 {
     // los metodos que empiezan por On se ejecutan por metodos, de forma automatica
     public event Action<MisionSO> OnNuevaMision; // evento 
+
+    public event Action<MisionSO> OnActualizarMision;
+    public event Action<MisionSO> OnTerminarMision;
     public void NuevaMision(MisionSO mision)
     {
         // aqui lanzo la notificacion (el evento) por si a alguien le interesa
