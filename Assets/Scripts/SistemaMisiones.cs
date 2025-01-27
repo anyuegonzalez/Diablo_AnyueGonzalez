@@ -16,16 +16,15 @@ public class SistemaMisiones : MonoBehaviour
         eventManager.OnTerminarMision += CerrarToggle;
     }
 
+    private void ActualizarToggle(MisionSO mision)
+    {
+
+    }
     private void CerrarToggle(MisionSO mision)
     {
         toggleMision[mision.indiceMision].Toggle.isOn = true;
+        toggleMision[mision.indiceMision].TextoMision.text = mision.ordenFinal;
     }
-
-    private void ActualizarToggle(MisionSO mision)
-    {
-        
-    }
-
     private void ActivarToggleMision(MisionSO mision)
     {
         toggleMision[mision.indiceMision].TextoMision.text = mision.ordenInicial;
