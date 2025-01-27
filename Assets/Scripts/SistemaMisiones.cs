@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,18 @@ public class SistemaMisiones : MonoBehaviour
     private void OnEnable() 
     {
         eventManager.OnNuevaMision += ActivarToggleMision; // te suscribes al evento porque me interesa para enterarme de que hay una nueva mision
+        eventManager.OnActualizarMision += ActualizarToggle;
+        eventManager.OnTerminarMision += CerrarToggle;
+    }
+
+    private void CerrarToggle(MisionSO mision)
+    {
+        toggleMision[mision.indiceMision].Toggle.isOn = true;
+    }
+
+    private void ActualizarToggle(MisionSO mision)
+    {
+        
     }
 
     private void ActivarToggleMision(MisionSO mision)
