@@ -19718,6 +19718,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
         type: 3}
+      propertyPath: dialogo
+      value: 
+      objectReference: {fileID: 11400000, guid: 67693c266fa78a4419d41d89b6b709ab,
+        type: 2}
+    - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
+        type: 3}
       propertyPath: cameraPoint
       value: 
       objectReference: {fileID: 1881505956}
