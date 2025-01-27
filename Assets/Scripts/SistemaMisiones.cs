@@ -6,7 +6,7 @@ public class SistemaMisiones : MonoBehaviour
 {
     [SerializeField] private EventManagerSO eventManager;
 
-    [SerializeField] private GameObject toggleMision;
+    [SerializeField] private ToggleMision[] toggleMision;
 
     private void OnEnable() 
     {
@@ -15,6 +15,7 @@ public class SistemaMisiones : MonoBehaviour
 
     private void ActivarToggleMision(MisionSO mision)
     {
-       toggleMision.SetActive(true);
+
+        toggleMision[mision.indiceMision].gameObject.SetActive(true);
     }
 }
