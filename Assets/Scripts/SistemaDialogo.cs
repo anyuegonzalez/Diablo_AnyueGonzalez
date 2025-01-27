@@ -104,7 +104,8 @@ public class SistemaDialogo : MonoBehaviour
 
       if(dialogoActual.tieneMision)
       {
-            eventManager.NuevaMision();
+            // comunico al event manager que hay una mision en este dialogo
+            eventManager.NuevaMision(dialogoActual.mision);
       }
 
       
