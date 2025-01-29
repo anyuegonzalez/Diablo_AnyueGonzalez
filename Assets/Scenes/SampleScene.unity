@@ -26787,6 +26787,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1269463012891319797, guid: e66abbb047ddd604298d028037580541,
         type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 6437472424544803571}
+    - targetCorrespondingSourceObject: {fileID: 1269463012891319797, guid: e66abbb047ddd604298d028037580541,
+        type: 3}
       insertIndex: -1
       addedObject: {fileID: 6437472424544803570}
     - targetCorrespondingSourceObject: {fileID: 1269463012891319797, guid: e66abbb047ddd604298d028037580541,
@@ -26839,6 +26843,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5004959, y: 0.49499667, z: 0.39871025}
   m_Center: {x: 0.0046896935, y: 0.19638497, z: 0.005124092}
+--- !u!114 &6437472424544803571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437472424544803568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acb7908a8b209e40813f6435b4fa8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventManager: {fileID: 11400000, guid: 874b6904bd75b5a48a71e70827013a98, type: 2}
+  misionAsociada: {fileID: 11400000, guid: 80a7736688c2ee64384f627875fc9451, type: 2}
 --- !u!4 &6440119329475861663
 Transform:
   m_ObjectHideFlags: 0
