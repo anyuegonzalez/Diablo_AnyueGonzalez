@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,9 @@ public class MisionSO : ScriptableObject
 
     public bool repetir; // si la mision tiene varios pasos.
     public int repeticionesTotales; //total de veces de lo que tenemos que hacer
-    public int estadoActual; // variable que nos marca donde estamos o cuantas llevamos 
+
+    [NonSerialized]public int estadoActual = 0; //para que la variable se pueda resetear la variable. variable que nos marca donde estamos o cuantas llevamos 
+    
 
     public int indiceMision;
 }
