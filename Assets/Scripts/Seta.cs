@@ -12,8 +12,16 @@ public class Seta : MonoBehaviour, IInteractuable
     [SerializeField] private MisionSO misionAsociada;
     public void Interactuar(Transform interactuador)
     {
-        eventManager.ActualizarMison(misionAsociada);
-        Destroy(this.gameObject);
+        misionAsociada.estadoActual++; // estamos a un paso mas de completar la mision
+        if(misionAsociada.estadoActual < misionAsociada.repeticionesTotales)
+        {
+            eventManager.ActualizarMison(misionAsociada);
+        }
+       else
+       {
+           eventManager.TerminarMision(misionAsociada);
+       }
+       Destroy(this.gameObject);
     }
     private void Awake()
     {
