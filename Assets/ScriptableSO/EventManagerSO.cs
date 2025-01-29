@@ -19,7 +19,7 @@ public class EventManagerSO : ScriptableObject
         // si no hay invocacion segura el juego peta
         OnNuevaMision?.Invoke(mision);
     }
-    public void Actualizarmison(MisionSO mision)
+    public void ActualizarMison(MisionSO mision)
     {
         OnActualizarMision?.Invoke(mision);
     }
