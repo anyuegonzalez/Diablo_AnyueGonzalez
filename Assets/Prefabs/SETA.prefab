@@ -140,7 +140,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 587157106232944975}
+  - component: {fileID: 8039226987361092573}
   - component: {fileID: 1868077676918560130}
+  - component: {fileID: 4873123918995029641}
+  - component: {fileID: 5606051691182320256}
   m_Layer: 0
   m_Name: SETA
   m_TagString: Untagged
@@ -165,6 +168,20 @@ Transform:
   - {fileID: 15238112809849790}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8039226987361092573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269463012891319797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acb7908a8b209e40813f6435b4fa8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventManager: {fileID: 11400000, guid: 874b6904bd75b5a48a71e70827013a98, type: 2}
+  misionAsociada: {fileID: 11400000, guid: 80a7736688c2ee64384f627875fc9451, type: 2}
 --- !u!95 &1868077676918560130
 Animator:
   serializedVersion: 5
@@ -186,6 +203,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &4873123918995029641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269463012891319797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5004959, y: 0.49499667, z: 0.39871025}
+  m_Center: {x: 0.0046896935, y: 0.19638497, z: 0.005124092}
+--- !u!114 &5606051691182320256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269463012891319797}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.094597585, g: 0.8679245, b: 0.04639842, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1472432529657527179
 GameObject:
   m_ObjectHideFlags: 0
