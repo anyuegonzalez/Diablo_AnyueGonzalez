@@ -8649,6 +8649,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1934762290}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &825841492 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6741273975464263762, guid: f667ba980bfd1a3478adcd34d0692554,
+    type: 3}
+  m_PrefabInstance: {fileID: 8507949754858979986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &825904513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5299612651951162016, guid: 1fe784c50e5cd8c44be08badb5321523,
@@ -19844,91 +19850,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1870433757}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1881505955
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: dialogo
-      value: 
-      objectReference: {fileID: 11400000, guid: 67693c266fa78a4419d41d89b6b709ab,
-        type: 2}
-    - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: cameraPoint
-      value: 
-      objectReference: {fileID: 1881505956}
-    - target: {fileID: 1653525539066942491, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_Name
-      value: Npc 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -25.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.08539335
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.99634737
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -549.797
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750951446044909556, guid: f667ba980bfd1a3478adcd34d0692554,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f667ba980bfd1a3478adcd34d0692554, type: 3}
---- !u!4 &1881505956 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6741273975464263762, guid: f667ba980bfd1a3478adcd34d0692554,
-    type: 3}
-  m_PrefabInstance: {fileID: 1881505955}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1884263938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27935,6 +27856,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 415788379093611296, guid: f667ba980bfd1a3478adcd34d0692554,
+        type: 3}
+      propertyPath: puntoCamara
+      value: 
+      objectReference: {fileID: 825841492}
     - target: {fileID: 1653525539066942491, guid: f667ba980bfd1a3478adcd34d0692554,
         type: 3}
       propertyPath: m_Name
@@ -28308,7 +28234,6 @@ SceneRoots:
   - {fileID: 1308792605}
   - {fileID: 2108264384}
   - {fileID: 8507949754858979986}
-  - {fileID: 1881505955}
   - {fileID: 1298444917}
   - {fileID: 1082812293}
   - {fileID: 5799962894727249446}

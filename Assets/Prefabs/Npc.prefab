@@ -388,9 +388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d9a7815dd94a74abbc34bce10ab1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventManager: {fileID: 11400000, guid: 874b6904bd75b5a48a71e70827013a98, type: 2}
+  misionAsociada: {fileID: 11400000, guid: 80a7736688c2ee64384f627875fc9451, type: 2}
   tiempoRotacion: 1
   dialogo: {fileID: 11400000, guid: a7614eb2851f99c4fac121147d482039, type: 2}
-  cameraPoint: {fileID: 6741273975464263762}
+  dialogo2: {fileID: 11400000, guid: 67693c266fa78a4419d41d89b6b709ab, type: 2}
+  puntoCamara: {fileID: 0}
 --- !u!136 &3025514269927052108
 CapsuleCollider:
   m_ObjectHideFlags: 0
