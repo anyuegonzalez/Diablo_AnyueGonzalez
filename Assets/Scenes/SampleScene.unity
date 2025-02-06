@@ -16594,6 +16594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fdcffc28838bc4fa9c704a29cff07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localCanvas: {fileID: 524315317450812395}
+  healthBar: {fileID: 524315317450812394}
+  vidasIniciales: 10
 --- !u!195 &1573680535
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22209,9 +22212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ddb697d4705054bb000a1b4186659e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidas: 200
   distanciaInteraccion: 2
   distanciaAtaque: 0
   tiempoRotacion: 0
+  attackingDistance: 2
+  danhoAtaque: 10
 --- !u!54 &2108264387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22952,6 +22958,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29d39054dc914d4b8f844368d37303f, type: 3}
+--- !u!114 &524315317450812394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4603617674590804213, guid: f29d39054dc914d4b8f844368d37303f,
+    type: 3}
+  m_PrefabInstance: {fileID: 524315317450812393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &524315317450812395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7614019889575977165, guid: f29d39054dc914d4b8f844368d37303f,
+    type: 3}
+  m_PrefabInstance: {fileID: 524315317450812393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &570016733067363526
 Transform:
   m_ObjectHideFlags: 0
