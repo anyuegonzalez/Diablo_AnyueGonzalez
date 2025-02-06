@@ -23247,6 +23247,7 @@ GameObject:
   - component: {fileID: 393862861968077634}
   - component: {fileID: 1025862504403905018}
   - component: {fileID: 1025862504403905020}
+  - component: {fileID: 1025862504403905021}
   - component: {fileID: 1025862504403905017}
   m_Layer: 0
   m_Name: EnemigoVisual
@@ -23307,6 +23308,20 @@ MonoBehaviour:
   distanciaAtaque: 1.5
   agent: {fileID: 1573680535}
   anim: {fileID: 1025862504403905017}
+--- !u!114 &1025862504403905021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025862504403905016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbff85fba0b72549840a898c9ce0e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 1573680534}
+  agent: {fileID: 1573680535}
 --- !u!1 &1045342299482463793
 GameObject:
   m_ObjectHideFlags: 0
@@ -25358,11 +25373,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4008805545956284499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cbff85fba0b72549840a898c9ce0e9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c51e0f70320ab64782033616dd3fafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  main: {fileID: 1573680534}
-  agent: {fileID: 1573680535}
+  gM: {fileID: 11400000, guid: 521799d4b26067b4eab9d00b63c7c952, type: 2}
+  visualId: 5
+  mainScript: {fileID: 2108264386}
+  agent: {fileID: 2108264385}
 --- !u!1001 &4393494945596824451
 PrefabInstance:
   m_ObjectHideFlags: 0
