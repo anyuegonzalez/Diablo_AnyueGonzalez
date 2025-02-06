@@ -64,7 +64,7 @@ public class Player : MonoBehaviour, IDanhable
                     lastHit = null; //Para que no siga interactuando
                 }
             }
-            else if (lastHit.TryGetComponent(out IDanhable _))
+            else if (lastHit.TryGetComponent(out IDanhable interactuador))
             {
                 currentTarget = lastHit;
                 agent.stoppingDistance = attackingDistance;
@@ -144,13 +144,4 @@ public class Player : MonoBehaviour, IDanhable
         }
     }
 
-    public void Danhable(Transform interatuador)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void RecibitDanho(Transform interatuador)
-    {
-        throw new NotImplementedException();
-    }
 }

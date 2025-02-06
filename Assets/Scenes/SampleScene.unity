@@ -22212,12 +22212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ddb697d4705054bb000a1b4186659e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas: 200
+  vidas: 10
   distanciaInteraccion: 2
   distanciaAtaque: 0
   tiempoRotacion: 0
   attackingDistance: 2
-  danhoAtaque: 10
+  danhoAtaque: 2
 --- !u!54 &2108264387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25151,6 +25151,7 @@ GameObject:
   - component: {fileID: 4389307365437424363}
   - component: {fileID: 4389307365437424364}
   - component: {fileID: 4389307365437424362}
+  - component: {fileID: 4389307365437424365}
   m_Layer: 3
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -25348,6 +25349,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 2108264386}
+--- !u!114 &4389307365437424365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008805545956284499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbff85fba0b72549840a898c9ce0e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 1573680534}
+  agent: {fileID: 1573680535}
 --- !u!1001 &4393494945596824451
 PrefabInstance:
   m_ObjectHideFlags: 0

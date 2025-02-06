@@ -30,9 +30,19 @@ public class Enemigo : MonoBehaviour
 
     private EnemyVisualSystem1 visualSystem;
 
+
+    private NavMeshAgent agent;
+
     [SerializeField]
     private float vidasIniciales;
 
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateUpAxis = false;
+        vidasActuales = vidasIniciales;
+
+    }
     private void Start()
     {
         // empieza el juego y activamos la patrulla
