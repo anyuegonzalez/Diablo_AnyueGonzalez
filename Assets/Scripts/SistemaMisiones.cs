@@ -26,6 +26,11 @@ public class SistemaMisiones : MonoBehaviour
     {
         toggleMision[mision.indiceMision].Toggle.isOn = true;
         toggleMision[mision.indiceMision].TextoMision.text = mision.ordenFinal;
+
+        Destroy(toggleMision[mision.indiceMision].gameObject);
+
+        // Eliminar la referencia de la lista
+        toggleMision[mision.indiceMision] = null;
     }
     private void ActivarToggleMision(MisionSO mision)
     {
