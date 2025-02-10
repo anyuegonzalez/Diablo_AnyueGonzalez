@@ -15,6 +15,5 @@ MonoBehaviour:
   ordenInicial: Recoge 3 setas de la muerte
   ordenFinal: Vuelve con Rigoberto y dale las setas
   repetir: 1
-  repeticionesTotales: 3
-  estadoActual: 0
+  repeticionesTotales: 6
   indiceMision: 0
