@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frases:
   - Ay dios mio, me estoy emocionando, tienes mis setas!!!!
-  - "Mi abuelita se pondr\xE1 contenta\n"
+  - "Mi abuelita se pondr\xE1 contenta, ahora, sal de la mazmorra antes de que te
+    pille el esp\xEDa\n"
   tiempoEntreLetras: 0.02
   tieneMision: 1
   mision: {fileID: 11400000, guid: e8e774f96146c5249925dd2e91b6fdb4, type: 2}

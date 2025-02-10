@@ -43,6 +43,9 @@ public class SistemaDialogo : MonoBehaviour
         npcCamera.SetPositionAndRotation(cameraPoint.position, cameraPoint.rotation);
         // el dialogo actual con el que trabajamos es el que me dan por parametro de entrada
         dialogoActual = dialogo;
+
+        indiceFraseActual = 0;
+
         marcos.SetActive(true);
         StartCoroutine(EscribirFrase());
     }
@@ -56,6 +59,7 @@ public class SistemaDialogo : MonoBehaviour
         char[] fraseEnLetras = dialogoActual.frases[indiceFraseActual].ToCharArray(); // convierte la frase pero en un array de caracteres
         foreach (char letra in fraseEnLetras)
         {
+            if (!escribiendo) yield break;
             textoDialogo.text += letra;
             yield return new WaitForSecondsRealtime(dialogoActual.tiempoEntreLetras);
         }
@@ -75,6 +79,7 @@ public class SistemaDialogo : MonoBehaviour
             // y si aun me quedan frases
             if(indiceFraseActual < dialogoActual.frases.Length)
             {
+                StopAllCoroutines();
                 StartCoroutine(EscribirFrase()); // la escribo 
             }
             else
