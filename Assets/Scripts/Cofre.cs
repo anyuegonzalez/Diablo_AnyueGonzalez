@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cofre : MonoBehaviour, IInteractuable
+public class Cofre : LookableItem, IInteractuable
 {
 
     private Outline outline;

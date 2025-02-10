@@ -9,6 +9,12 @@ public class EventManagerSO : ScriptableObject
     // los metodos que empiezan por On se ejecutan por metodos, de forma automatica
     public event Action<MisionSO> OnNuevaMision; // evento 
 
+    public event Action<float, float> OnPlayerStartsInspecting;
+    public event Action<float> OnPlayerStopsInspecting;
+
+    public event Action<float, float> OnInspecting; // Se activa cuando el jugador comienza a inspeccionar
+    public event Action<float> OnStopInspecting; // Se activa cuando el jugador deja de inspeccionar
+
     public event Action<MisionSO> OnActualizarMision;
     public event Action<MisionSO> OnTerminarMision;
     public void NuevaMision(MisionSO mision)
@@ -27,4 +33,16 @@ public class EventManagerSO : ScriptableObject
     {
         OnTerminarMision?.Invoke(mision);
     }
+    public void PlayerStopsInspecting(float quitInspectionDuration)
+    {
+        // Dispara el evento notificando a los sistemas suscritos
+        OnPlayerStopsInspecting?.Invoke(quitInspectionDuration);
+    }
+
+    public void PlayerStartsInspecting(float startInspectionDuration, float distanceToLookPoint)
+    {
+        // Dispara el evento notificando a los sistemas suscritos
+        OnPlayerStartsInspecting?.Invoke(startInspectionDuration, distanceToLookPoint);
+    }  
+
 }
