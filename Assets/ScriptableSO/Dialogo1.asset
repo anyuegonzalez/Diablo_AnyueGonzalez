@@ -15,7 +15,7 @@ MonoBehaviour:
   frases:
   - Hola aventurero, mi abuelita esta enferma y solo se puede curar con una medicina
     infernanal
-  - Para poder cocinar la medicina necesito conseguir 3 setas de la muerte
+  - Para poder cocinar la medicina necesito conseguir 6 setas de la muerte
   - "Me las podr\xEDas conseguir por favor?"
   tiempoEntreLetras: 0.02
   tieneMision: 1

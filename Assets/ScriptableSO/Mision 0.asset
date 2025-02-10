@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da152c658cfaf904d9871e6e61cc8a14, type: 3}
   m_Name: Mision 0
   m_EditorClassIdentifier: 
-  ordenInicial: Recoge 3 setas de la muerte
+  ordenInicial: Recoge 6 setas de la muerte
   ordenFinal: Vuelve con Rigoberto y dale las setas
   repetir: 1
   repeticionesTotales: 6
