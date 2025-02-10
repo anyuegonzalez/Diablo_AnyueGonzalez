@@ -9701,8 +9701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31f271d707aacb34bad61b58f84af38a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPausa: {fileID: 0}
-  puntosObjetivo: 25
+  canvasPausa: {fileID: 1807351925}
 --- !u!4 &871495879
 Transform:
   m_ObjectHideFlags: 0
